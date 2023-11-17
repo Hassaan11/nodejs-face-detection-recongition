@@ -2,18 +2,6 @@
 
 This Node.js application demonstrates passport scanning for MRZ data and face recognition using both the face-api.js and OpenCV libraries.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Endpoints](#endpoints)
-  - [Passport Controller](#passport-controller)
-  - [Face Controller](#face-controller)
-- [License](#license)
-- [Contributing](#contributing)
-
 ## Introduction
 
 This application showcases passport scanning for MRZ data and face recognition using face-api.js and OpenCV libraries.
@@ -23,8 +11,7 @@ This application showcases passport scanning for MRZ data and face recognition u
 Ensure the following software and dependencies are installed before running the application.
 
 - [Node.js](https://nodejs.org/)
-- [OpenCV](https://docs.opencv.org/master/d5/de5/tutorial_js_install.html)
-- Other dependencies...
+- [OpenCV](https://www.npmjs.com/package/@u4/opencv4nodejs)
 
 ## Installation
 
@@ -46,9 +33,9 @@ Follow these steps to install and set up the application.
     ```bash
     brew install opencv
 
-    Add the following configuration to your package.json file with your installation path:
+  Update the following configuration to your package.json file with your own installation path:
 
-    ```bash
+  ```bash
     "opencv4nodejs": {
     "disableAutoBuild": 1,
     "opencvIncludeDir": "/usr/local/Cellar/opencv/4.8.1_2/include/opencv4",
@@ -69,8 +56,8 @@ Follow these steps to install and set up the application.
 
 ## Usage
 
-    ```bash
-    npm start
+  ```bash
+  npm start
 
 # Endpoints
 
