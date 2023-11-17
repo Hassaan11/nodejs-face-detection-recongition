@@ -31,22 +31,24 @@ Follow these steps to install and set up the application.
     ### Homebrew (for macOS)
 
     ```bash
-    brew install opencv
+    brew install opencv@4
 
-  Update the following configuration to your package.json file with your own installation path:
+    ### Configuration
+    
+    Update the following configuration to your package.json file with your own installation path:
 
-  ```bash
-    "opencv4nodejs": {
-    "disableAutoBuild": 1,
-    "opencvIncludeDir": "/usr/local/Cellar/opencv/4.8.1_2/include/opencv4",
-    "opencvLibDir": "/usr/local/Cellar/opencv/4.8.1_2/lib",
-    "opencvBinDir": "/usr/local/Cellar/opencv/4.8.1_2/bin",
-    "opencvModules": [
-      "core",
-      "imgproc",
-      "objdetect"
-    ]
-  }
+    ```bash
+      "opencv4nodejs": {
+      "disableAutoBuild": 1,
+      "opencvIncludeDir": "/usr/local/Cellar/opencv/4.8.1_2/include/opencv4",
+      "opencvLibDir": "/usr/local/Cellar/opencv/4.8.1_2/lib",
+      "opencvBinDir": "/usr/local/Cellar/opencv/4.8.1_2/bin",
+      "opencvModules": [
+        "core",
+        "imgproc",
+        "objdetect"
+      ]
+    }
 
 
 3. Install dependencies:
