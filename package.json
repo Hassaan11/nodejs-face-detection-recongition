@@ -4,14 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "build-opencv --incDir /usr/local/Cellar/opencv/4.8.1_2/include --libDir /usr/local/Cellar/opencv/4.8.1_2/lib --binDir /usr/local/Cellar/opencv/4.8.1_2/bin --nobuild rebuild"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@u4/opencv4nodejs": "^6.5.2",
+    "body-parser": "^1.20.2",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "face-api.js": "^0.22.2",
     "mrz-scan": "^1.2.0",
     "nodemon": "^3.0.1"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "/usr/local/Cellar/opencv/4.8.1_2/include/opencv4",
+    "opencvLibDir": "/usr/local/Cellar/opencv/4.8.1_2/lib",
+    "opencvBinDir": "/usr/local/Cellar/opencv/4.8.1_2/bin",
+    "opencvModules": [
+      "core",
+      "imgproc",
+      "objdetect"
+    ]
   }
 }
