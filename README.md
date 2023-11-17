@@ -34,7 +34,7 @@ Follow these steps to install and set up the application.
     brew install opencv@4
 
     ### Configuration
-    
+
     Update the following configuration to your package.json file with your own installation path:
 
     ```bash
@@ -60,8 +60,9 @@ Follow these steps to install and set up the application.
 
   ```bash
   npm start
+  ```
 
-# Endpoints
+## Endpoints
 
 ## Passport Controller
 
